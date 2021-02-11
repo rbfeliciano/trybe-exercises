@@ -1,0 +1,12 @@
+NAME: PR Members
+Para dinamizar o esquema, foi sugerido a execução de um mapa mental no Lucid.
+Foi discutido entre o grupo como é feita a dinâmica de tráfego de informações entre servidor e cliente.
+O grupo definiu que o fluxo ocorre da seguinte maneira:
+O dispositivo se conecta com o provedor de internet (ISP) que é basicamente um provedor de internet como Oi, Vivo e Tim através de um roteador.
+O usuário digita na barra do client (browser) a URL que ele deseja acessar.
+O ISP envia a URL para o servidor DNS
+O servidor DNS traduz o domínio em um endereço de IP e retorna para o client
+O client faz a requisição http ao servidor.
+o balanceador de carga basicamente busca equilibrar a oferta e a demanda de requisições, distribuindo entre os servidores afim de não sobrecarregar.
+Em caso de aprovação da requisição ele envia a mensagem “200 ok” para o cliente.
+O servidor envia o pacote de dados para o browser  e ele é carregado na tela.
